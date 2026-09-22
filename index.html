@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karan | Personal Website</title>
+
+    <!-- Font Awesome for real Instagram & GitHub logos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        /* HOME */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .home h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: #007bff;
+        }
+
+        .home p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #007bff;
+            transform: translateY(-3px);
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 90px 10%;
+            background: white;
+            text-align: center;
+        }
+
+        .about h2,
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* SOCIAL */
+        .social {
+            margin-top: 30px;
+        }
+
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 8px;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #222;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            background: #222;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .social i {
+            font-size: 22px;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 90px 10%;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            header {
+                padding: 18px 5%;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .home h1 {
+                font-size: 40px;
+            }
+
+            .home p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+
+        <div class="logo">
+            Karan
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="home">
+
+        <div>
+
+            <h1>
+                Hi, I'm <span>Karan</span> 👋
+            </h1>
+
+            <p>
+                B.Sc IT Student | Web Development Learner
+            </p>
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Karan.
+            I am a B.Sc IT student and I am interested
+            in programming, web development and technology.
+            I am currently learning HTML, CSS, C programming
+            and other technologies.
+        </p>
+
+
+        <!-- SOCIAL LINKS -->
+        <div class="social">
+
+            <!-- INSTAGRAM -->
+            <a href="https://instagram.com/_.kxrannn._"
+               target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+
+            </a>
+
+
+            <!-- GITHUB -->
+            <a href="https://github.com/karanrajput08"
+               target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+                GitHub
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>📍 Mumbai, Maharashtra</p>
+
+        <p>
+            Want to contact me? Send me an email.
+        </p>
+
+        <a href="mailto:karandhanka813@gmail.com"
+           class="btn">
+
+            Send Email
+
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Karan. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
